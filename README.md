@@ -184,3 +184,61 @@ Because: mood match: chill (+1.0); energy 0.28 vs target 0.35 (+0.93)
 Coffee Shop Stories - Score: 0.98
 Because: energy 0.37 vs target 0.35 (+0.98)
 
+
+```
+Loaded songs: 19
+
+=== High-Energy Pop: top recommendations ===
+
+Sunrise City - Score: 3.92
+Because: genre match: pop (+2.0); mood match: happy (+1.0); energy 0.82 vs target 0.90 (+0.92)
+
+Gym Hero - Score: 2.97
+Because: genre match: pop (+2.0); energy 0.93 vs target 0.90 (+0.97)
+
+Rooftop Lights - Score: 1.86
+Because: mood match: happy (+1.0); energy 0.76 vs target 0.90 (+0.86)
+
+Storm Runner - Score: 0.99
+Because: energy 0.91 vs target 0.90 (+0.99)
+
+Iron Cathedral - Score: 0.94
+Because: energy 0.96 vs target 0.90 (+0.94)
+
+
+=== Chill Lofi: top recommendations ===
+
+Library Rain - Score: 4.00
+Because: genre match: lofi (+2.0); mood match: chill (+1.0); energy 0.35 vs target 0.35 (+1.00)
+
+Midnight Coding - Score: 3.93
+Because: genre match: lofi (+2.0); mood match: chill (+1.0); energy 0.42 vs target 0.35 (+0.93)
+
+Focus Flow - Score: 2.95
+Because: genre match: lofi (+2.0); energy 0.40 vs target 0.35 (+0.95)
+
+Spacewalk Thoughts - Score: 1.93
+Because: mood match: chill (+1.0); energy 0.28 vs target 0.35 (+0.93)
+
+Coffee Shop Stories - Score: 0.98
+Because: energy 0.37 vs target 0.35 (+0.98)
+
+
+=== Deep Intense Rock: top recommendations ===
+
+Storm Runner - Score: 3.99
+Because: genre match: rock (+2.0); mood match: intense (+1.0); energy 0.91 vs target 0.92 (+0.99)
+
+Gym Hero - Score: 1.99
+Because: mood match: intense (+1.0); energy 0.93 vs target 0.92 (+0.99)
+
+Iron Cathedral - Score: 0.96
+Because: energy 0.96 vs target 0.92 (+0.96)
+
+Neon Pulse - Score: 0.95
+Because: energy 0.97 vs target 0.92 (+0.95)
+
+Sunrise City - Score: 0.90
+Because: energy 0.82 vs target 0.92 (+0.90)
+```
+

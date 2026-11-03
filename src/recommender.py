@@ -3,6 +3,8 @@ import heapq
 from typing import List, Dict, Tuple, Optional
 from dataclasses import dataclass
 
+# EXPERIMENT (weight shift): genre halved 2.0 -> 1.0, energy doubled 1.0 -> 2.0.
+# Max score is still 4.0 (1.0 + 1.0 + 2.0), same as the baseline (2.0 + 1.0 + 1.0).
 GENRE_WEIGHT = 2.0
 MOOD_WEIGHT = 1.0
 ENERGY_WEIGHT = 1.0
