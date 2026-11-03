@@ -21,16 +21,19 @@ Prompts:
 
 ## 3. How the Model Works  
 
-Explain your scoring approach in simple language.  
+The recommender looks at each song one at a time and asks, "How well does this fit what the listener likes?" It answers with a score, and the songs with the highest scores are the ones shown.
 
-Prompts:  
+The listener tells the system three things: a favorite genre, a favorite mood, and how energetic they want the music to feel (a number from 0, very calm, to 1, very intense). The system then gives every song points:
 
-- What features of each song are used (genre, energy, mood, etc.)  
-- What user preferences are considered  
-- How does the model turn those into a score  
-- What changes did you make from the starter logic  
+- **Genre:** if the song's genre is exactly the listener's favorite, it earns 2 points. This is the biggest reward because genre is the clearest sign of taste.
+- **Mood:** if the song's mood is exactly the listener's favorite, it earns 1 point. Mood counts for less because the same mood shows up across many genres.
+- **Energy:** every song earns up to 1 point depending on how close its energy is to what the listener wants. A perfect match earns the full point, and the further away it is, the fewer points it earns. Because every song gets some credit here, this also breaks ties between songs that match equally on genre and mood.
 
-Avoid code here. Pretend you are explaining the idea to a friend who does not program.
+A song's score is the sum of these points, so the best possible score is 4. Once every song has a score, the system sorts them from highest to lowest and keeps the top five.
+
+Each recommendation also comes with its reasons, such as "genre match: lofi (+2.0)", so the listener can see exactly why a song was picked rather than just trusting the ranking.
+
+The system doesn't use listening history or other people's behavior. It only compares a song's own attributes to the listener's stated preferences. Genre and mood must match exactly, so "indie pop" gets no credit as "pop", and "relaxed" gets no credit as "chill".
 
 ---
 
